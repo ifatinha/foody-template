@@ -1,0 +1,40 @@
+/*** start top-bar nav ***/
+.top-bar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    font-size    : var(--bs-font-14);
+    padding      : 12px 0;
+}
+
+.top-bar a {
+    color: var(--bs-gray);
+}
+
+.top-bar a i {
+    transition: var(--bs-transition);
+    transform : scale(1);
+}
+
+.top-bar a:hover i {
+    transform: scale(1.125);
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+}
+
+/*** end top-bar nav ***/
+
+/*** start header navbar ***/
+#social {
+    display: none;
+}
+
+@media screen and (min-width: 998px) {
+    #social {
+        display: flex;
+    }
+}
+
+/*** end header navbar ***/

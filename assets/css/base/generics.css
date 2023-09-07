@@ -1,0 +1,16 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    color      : var(--bs-gray);
+    font-family: var(--second-font);
+    font-size  : 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
