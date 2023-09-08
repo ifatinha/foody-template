@@ -24,6 +24,9 @@
     --bs-light     : #F7F8FC;
     --bs-dark      : #111;
     --bs-gradient  : linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-font-40   : 2.5rem;
+    --bs-font-30   : 1.875rem;
+    --bs-font-20   : 1.25rem;
     --bs-font-14   : 0.875rem;
     --bs-transition: .3s ease-in-out;
 }

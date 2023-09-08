@@ -13,7 +13,7 @@
 
 <body>
     <!-- start top-bar nav-->
-    <div class="container-fluid">
+    <div class="container-fluid d-none d-lg-block">
         <div class="top-bar row flex align-items-center">
             <div class="col-lg-6 px-5">
                 <span>
@@ -39,7 +39,7 @@
     <!-- start navbar header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5">
                 <a class="navbar-brand" href="#">
                     <h1>
                         F<span>oo</span>dy
@@ -49,18 +49,18 @@
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                    <ul class="navbar-nav my-2 my-lg-0" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-lg-1">
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-lg-1">
                             <a class="nav-link" href="#about">About us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-lg-1">
                             <a class="nav-link" href="#products">Products</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown me-lg-1">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Pages
@@ -75,16 +75,25 @@
                                 <li><a class="dropdown-item" href="#contact">Contact</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item me-lg-1">
+                            <a class="nav-link" href="#about">Contact us</a>
+                        </li>
                     </ul>
-                    <ul id="social">
+                    <ul id="social" class="d-none d-lg-flex ms-2">
                         <li>
-                            <a href="#" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="#" aria-label="Search"
+                                class="d-flex align-items-center justify-content-center btn-sm-square bg-white ms-2 rounded-circle">
+                                <i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
                         <li>
-                            <a href="#" aria-label="User"><i class="fa-regular fa-user"></i></a>
+                            <a href="#" aria-label="User"
+                                class="d-flex align-items-center justify-content-center btn-sm-square bg-white ms-2 rounded-circle">
+                                <i class="fa-regular fa-user"></i></a>
                         </li>
                         <li>
-                            <a href="#" aria-label="Shopping"><i class="fa-solid fa-bag-shopping"></i></a>
+                            <a href="#" aria-label="Shopping"
+                                class="d-flex align-items-center justify-content-center btn-sm-square bg-white ms-2 rounded-circle">
+                                <i class="fa-solid fa-bag-shopping"></i></a>
                         </li>
                     </ul>
                 </div>
