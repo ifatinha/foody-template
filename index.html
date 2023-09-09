@@ -4,40 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project developed during the bootstrap course on the DIO CSS trail.">
+    <meta name="author" content="Fatima Ferreira">
+    <meta name="copyright" content="Some rights reserved">
+    <meta name="robots" content="index, follow">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Foody</title>
+    <title>Foody - Organic Food</title>
 </head>
 
 <body>
-    <!-- start top-bar nav-->
-    <div class="container-fluid d-none d-lg-block top-navbar bg-transparent">
-        <div class="top-bar row flex align-items-center">
-            <div class="col-lg-6 px-5">
-                <span>
-                    <i class="fa-solid fa-location-dot mx-1"></i>
-                    123 Street, New York, USA
-                </span>
-                <span class="ms-4">
-                    <i class="fa-solid fa-envelope mx-1"></i>
-                    foody@contato.com
-                </span>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <span>Follow us: </span>
-                <a href="#" aria-label="Facebook" class="ms-3"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter" class="ms-3"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" aria-label="Instagram" class="ms-3"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="Whatsapp" class="ms-3"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- start navbar header -->
+    <header class="header container-fluid px-0">
+        <div class="container-fluid d-none d-lg-block top-navbar bg-transparent">
+            <div class="top-bar row flex align-items-center">
+                <div class="col-lg-6 px-5">
+                    <span>
+                        <i class="fa-solid fa-location-dot mx-1"></i>
+                        123 Street, New York, USA
+                    </span>
+                    <span class="ms-4">
+                        <i class="fa-solid fa-envelope mx-1"></i>
+                        foody@contato.com
+                    </span>
+                </div>
+                <div class="col-lg-6 px-5 text-end">
+                    <span>Follow us: </span>
+                    <a href="#" aria-label="Facebook" class="ms-3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter" class="ms-3"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram" class="ms-3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Whatsapp" class="ms-3"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- end top-bar nav-->
-
-    <!-- start navbar header -->
-    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid px-lg-5">
                 <a class="navbar-brand" href="#">
@@ -106,7 +107,7 @@
     <!-- end navbar header -->
 
     <!-- start main carousel -->
-    <div class="container-fluid p-0">
+    <main class="container-fluid p-0">
         <div id="carousel-foody" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-foody" data-bs-slide-to="0" class="active"
@@ -159,7 +160,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </main>
     <!-- end main carousel -->
 
     <!-- start section about -->
@@ -211,7 +212,7 @@
                         <img src="assets/images/icon-1.png" alt="Organic Product" class="img-fluid mb-4">
                         <h3 class="mb-3 features-title">Natural Process</h3>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi.</p>
-                        <a href="#" class="btn btn-outline-success rounded-pill border-2 py-2 px-4">Read more</a>
+                        <a href="#" class="btn btn-outline-primary rounded-pill border-2 py-2 px-4">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -220,7 +221,7 @@
                         <h3 class="mb-3 features-title">Organic Products</h3>
                         <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eveniet ut?
                             Culpa?</p>
-                        <a href="#" class="btn btn-outline-success rounded-pill border-2 py-2 px-4">Read more</a>
+                        <a href="#" class="btn btn-outline-primary rounded-pill border-2 py-2 px-4">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -229,13 +230,42 @@
                         <h3 class="mb-3 features-title">Biologically safe</h3>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolores
                             facilis?</p>
-                        <a href="#" class="btn btn-outline-success rounded-pill border-2 py-2 px-4">Read more</a>
+                        <a href="#" class="btn btn-outline-primary rounded-pill border-2 py-2 px-4">Read more</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end section features -->
+
+    <!-- start section products -->
+    <section id="products" class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 gx-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="section-header text-start mb-5">
+                        <h2 class="section-title display-5 mb-3 position-relative">Our Products</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nulla quibusdam numquam,
+                            obcaecati sint facere.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-start text-lg-end">
+                    <ul class="nav nav-pills mb-5 justify-content-end d-inline-flex">
+                        <li class="nav-item me-2">
+                            <a href="#" class="btn btn-outline-primary border-2 rounded-0 active">Vegetables</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a href="#" class="btn btn-outline-primary border-2 rounded-0">Fruits</a>
+                        </li>
+                        <li class="nav-item me-0">
+                            <a href="#" class="btn btn-outline-primary border-2 rounded-0">Fresh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section products -->
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

@@ -17,15 +17,14 @@ body {
 }
 
 .btn-primary {
-    background-color           : var(--bs-primary);
+    --bs-btn-bg                : var(--bs-primary);
     --bs-btn-border-color      : var(--bs-primary);
     --bs-btn-hover-border-color: var(--bs-primary);
     --bs-btn-hover-bg          : var(--bs-primary);
 }
 
 .btn-secondary {
-    background-color           : var(--bs-secondary);
-    border-color               : var(--bs-secondary);
+    --bs-btn-bg                : var(--bs-secondary);
     --bs-btn-border-color      : var(--bs-secondary);
     --bs-btn-hover-border-color: var(--bs-secondary);
     --bs-btn-hover-bg          : var(--bs-secondary);
@@ -78,8 +77,26 @@ body {
     width     : 120px;
 }
 
-.btn-outline-success {
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left     : 0;
+    transform: translateX(0);
+}
+
+.btn-outline-primary {
     --bs-btn-border-color      : var(--bs-primary);
     --bs-btn-hover-bg          : var(--bs-primary);
     --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-color             : var(--bs-primary);
+}
+
+.btn.active {
+    --bs-btn-bg          : var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+}
+
+.nav-pills .nav-item .active {
+    background-color: var(--bs-primary);
+    border-color    : var(--bs-primary);
+    color           : var(--bs-white) !important;
 }

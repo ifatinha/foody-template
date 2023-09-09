@@ -1,8 +1,15 @@
-/*** start top-bar nav ***/
-.top-navbar {
+/*** start header navbar ***/
+.header {
     position: absolute;
+    top     : 0;
     width   : 100%;
     z-index : 2;
+}
+
+/*** start top-bar nav ***/
+.top-navbar {
+    width  : 100%;
+    z-index: 2;
 }
 
 .top-bar {
@@ -25,20 +32,7 @@
 
 /*** end top-bar nav ***/
 
-/*** start header navbar ***/
-.header {
-    position: absolute;
-    top     : 0;
-    width   : 100%;
-    z-index : 2;
-}
-
-@media screen and (min-width: 998px) {
-    .header {
-        top: 46px;
-    }
-}
-
+/*** start nav-bar ***/
 .navbar-brand h1 {
     color      : var(--bs-primary);
     font-family: var(--primary-font);
@@ -61,9 +55,9 @@
     --bs-navbar-padding-y: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .navbar-nav {
-        background: var(--bs-white);
+        background-color: var(--bs-white);
     }
 }
 
@@ -103,6 +97,7 @@
     transform : translateY(-1px);
 }
 
+/*** end nav-bar ***/
 /*** end header navbar ***/
 
 /*** start carousel ***/
@@ -195,3 +190,6 @@
 }
 
 /*** end section features ***/
+
+/*** start section products ***/
+/*** end section products ***/
