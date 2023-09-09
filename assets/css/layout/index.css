@@ -61,6 +61,12 @@
     --bs-navbar-padding-y: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        background: var(--bs-white);
+    }
+}
+
 .navbar-nav .nav-item .nav-link,
 .dropdown-menu .dropdown-item {
     color      : var(--bs-gray);
