@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    color      : var(--bs-gray);
+    color      : var(--bs-gray-dark);
     font-family: var(--second-font);
     font-size  : 1em;
     font-weight: 400;

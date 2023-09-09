@@ -1,4 +1,10 @@
 /*** start top-bar nav ***/
+.top-navbar {
+    position: absolute;
+    width   : 100%;
+    z-index : 2;
+}
+
 .top-bar {
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     font-size    : var(--bs-font-14);
@@ -6,21 +12,33 @@
 }
 
 .top-bar a {
-    color: var(--bs-gray);
+    color: var(--bs-gray-dark);
 }
 
 .top-bar a i {
     transition: var(--bs-transition);
-    transform : scale(1);
 }
 
 .top-bar a:hover i {
-    transform: scale(1.125);
+    transform: translateY(-1px);
 }
 
 /*** end top-bar nav ***/
 
 /*** start header navbar ***/
+.header {
+    position: absolute;
+    top     : 0;
+    width   : 100%;
+    z-index : 2;
+}
+
+@media screen and (min-width: 998px) {
+    .header {
+        top: 46px;
+    }
+}
+
 .navbar-brand h1 {
     color      : var(--bs-primary);
     font-family: var(--primary-font);
@@ -48,10 +66,7 @@
     color      : var(--bs-gray);
     font-weight: 500;
     font-family: var(--bs-primary);
-}
-
-.navbar-nav .nav-item .nav-link {
-    transition: var(--bs-transition);
+    transition : var(--bs-transition);
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -64,17 +79,101 @@
 
 @media screen and (min-width: 998px) {
     .navbar-nav .nav-item .nav-link {
-        color      : var(--bs-gray);
-        font-weight: 500;
-        padding    : 25px 15px;
+        padding: 25px 15px;
     }
 }
 
 .btn-sm-square {
-    color      : var(--bs-gray);
-    font-weight: bolder;
-    height     : 34px;
-    width      : 34px;
+    background-color: var(--bs-white);
+    color           : var(--bs-gray-dark);
+    font-weight     : bolder;
+    height          : 34px;
+    transition      : var(--bs-transition);
+    width           : 34px;
+}
+
+.btn-sm-square:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform : translateY(-1px);
 }
 
 /*** end header navbar ***/
+
+/*** start main carousel ***/
+@media screen and (max-width: 768px) {
+    #carousel-foody .carousel-item {
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #carousel-foody .carousel-item img {
+        height         : 100%;
+        object-fit     : cover;
+        object-position: center;
+        position       : absolute;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--bs-primary);
+    border-radius   : 3rem;
+    border          : 10px solid var(--bs-primary);
+    height          : 3rem;
+    width           : 3rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+.carousel-caption {
+    inset   : 0;
+    position: absolute;
+    z-index : 1;
+}
+
+.carousel-title {
+    color         : var(--bs-dark);
+    font-family   : var(--primary-font);
+    font-weight   : 700;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 1200px) {
+    .display-2 {
+        font-size: var(--bs-font-72);
+    }
+}
+
+.btn {
+    font-weight: 500;
+    transition : var(--bs-transition);
+}
+
+.btn-primary {
+    background-color           : var(--bs-primary);
+    --bs-btn-border-color      : var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-hover-bg          : var(--bs-primary);
+}
+
+.btn-secondary {
+    background-color           : var(--bs-secondary);
+    border-color               : var(--bs-secondary);
+    --bs-btn-border-color      : var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-secondary);
+    --bs-btn-hover-bg          : var(--bs-secondary);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 0.8;
+}
+
+/*** end main carousel ***/

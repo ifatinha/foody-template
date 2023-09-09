@@ -13,15 +13,15 @@
 
 <body>
     <!-- start top-bar nav-->
-    <div class="container-fluid d-none d-lg-block">
+    <div class="container-fluid d-none d-lg-block top-navbar bg-transparent">
         <div class="top-bar row flex align-items-center">
             <div class="col-lg-6 px-5">
                 <span>
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot mx-1"></i>
                     123 Street, New York, USA
                 </span>
                 <span class="ms-4">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope mx-1"></i>
                     foody@contato.com
                 </span>
             </div>
@@ -37,8 +37,8 @@
     <!-- end top-bar nav-->
 
     <!-- start navbar header -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-white">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid px-lg-5">
                 <a class="navbar-brand" href="#">
                     <h1>
@@ -82,17 +82,17 @@
                     <ul id="social" class="d-none d-lg-flex ms-2">
                         <li>
                             <a href="#" aria-label="Search"
-                                class="d-flex align-items-center justify-content-center btn-sm-square bg-white ms-2 rounded-circle">
+                                class="d-flex align-items-center justify-content-center btn-sm-square ms-2 rounded-circle">
                                 <i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
                         <li>
                             <a href="#" aria-label="User"
-                                class="d-flex align-items-center justify-content-center btn-sm-square bg-white ms-2 rounded-circle">
+                                class="d-flex align-items-center justify-content-center btn-sm-square ms-2 rounded-circle">
                                 <i class="fa-regular fa-user"></i></a>
                         </li>
                         <li>
                             <a href="#" aria-label="Shopping"
-                                class="d-flex align-items-center justify-content-center btn-sm-square bg-white ms-2 rounded-circle">
+                                class="d-flex align-items-center justify-content-center btn-sm-square ms-2 rounded-circle">
                                 <i class="fa-solid fa-bag-shopping"></i></a>
                         </li>
                     </ul>
@@ -102,6 +102,61 @@
     </header>
     <!-- end navbar header -->
 
+    <!-- start main carousel -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="carousel-foody" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-foody" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-foody" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/carousel-1.jpg" class="w-100" alt="Foody bg">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-md-start">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h2 class="display-2 mb-5 carousel-title">Organic food is good for health</h2>
+                                    <div>
+                                        <a href="#" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a>
+                                        <a href="#" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Services</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/carousel-2.jpg" class="w-100" alt="Foody bg">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-md-start">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <h2 class="display-2 mb-5 carousel-title">Natural Food Is Always Healthy</h2>
+                                    <div>
+                                        <a href="#" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a>
+                                        <a href="#"
+                                            class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Services</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-foody" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-foody" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end main carousel -->
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
