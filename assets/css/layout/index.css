@@ -99,7 +99,7 @@
 
 /*** end header navbar ***/
 
-/*** start main carousel ***/
+/*** start carousel ***/
 @media screen and (max-width: 768px) {
     #carousel-foody .carousel-item {
         min-height: 500px;
@@ -176,4 +176,4 @@
     opacity: 0.8;
 }
 
-/*** end main carousel ***/
+/*** end carousel ***/
