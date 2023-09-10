@@ -100,3 +100,11 @@ body {
     border-color    : var(--bs-primary);
     color           : var(--bs-white) !important;
 }
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}

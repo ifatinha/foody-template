@@ -125,6 +125,11 @@
     width           : 3rem;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+}
+
 @media screen and (max-width: 768px) {
 
     .carousel-control-prev,
@@ -192,4 +197,30 @@
 /*** end section features ***/
 
 /*** start section products ***/
+.product-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+    transition: var(--bs-transition);
+}
+
+.product-item img {
+    transition: all 0.5s ease 0s;
+}
+
+.product-item img:hover {
+    transform: scale(1.1);
+}
+
+.product-title {
+    font-family: var(--primary-font);
+}
+
+#pills-tabContent a {
+    font-size : var(--bs-font-14);
+    transition: var(--bs-transition);
+}
+
+#pills-tabContent a:hover {
+    color: var(--bs-primary);
+}
+
 /*** end section products ***/

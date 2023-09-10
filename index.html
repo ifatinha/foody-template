@@ -240,30 +240,643 @@
 
     <!-- start section products -->
     <section id="products" class="container-xxl py-5">
-        <div class="container">
+        <div class="container mb-4">
             <div class="row g-0 gx-5 align-items-end">
                 <div class="col-lg-6">
-                    <div class="section-header text-start mb-5">
+                    <div class="section-header text-start">
                         <h2 class="section-title display-5 mb-3 position-relative">Our Products</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nulla quibusdam numquam,
                             obcaecati sint facere.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 text-start text-lg-end">
-                    <ul class="nav nav-pills mb-5 justify-content-end d-inline-flex">
-                        <li class="nav-item me-2">
-                            <a href="#" class="btn btn-outline-primary border-2 rounded-0 active">Vegetables</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a href="#" class="btn btn-outline-primary border-2 rounded-0">Fruits</a>
-                        </li>
-                        <li class="nav-item me-0">
-                            <a href="#" class="btn btn-outline-primary border-2 rounded-0">Fresh</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
+        <div class="container">
+            <ul class="nav nav-pills justify-content-lg-end" id="pills-tab" role="tablist">
+                <li class="nav-item me-2 mb-2" role="presentation">
+                    <button class="btn btn-outline-primary border-2 rounded-0 active" id="pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Vegetables</button>
+                </li>
+                <li class="nav-item me-2" role="presentation">
+                    <button class="btn btn-outline-primary border-2 rounded-0" id="pills-profile-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Fruits</button>
+                </li>
+                <li class="nav-item me-2" role="presentation">
+                    <button class="btn btn-outline-primary border-2 rounded-0" id="pills-contact-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">Fresh</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="row g-4 mt-4">
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-1.jpg" alt="Tomato" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Tomato</h3>
+                                    <span class="text-primary mb-2">R$ 5.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 8.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-7.jpg" alt="Potato" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Potato</h3>
+                                    <span class="text-primary mb-2">R$ 2.75</span>
+                                    <span class="text-body text-decoration-line-through">R$ 4.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-9.jpg" alt="Eggplant" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Eggplant</h3>
+                                    <span class="text-primary mb-2">R$ 14.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 17.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-10.jpg" alt="Lettuce" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Lettuce</h3>
+                                    <span class="text-primary mb-2">R$ 1.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 2.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-11.jpg" alt="Cucumber" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Cucumber</h3>
+                                    <span class="text-primary mb-2">R$ 5.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 8.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-12.jpg" alt="Beet" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Beet</h3>
+                                    <span class="text-primary mb-2">R$ 4.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 6.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-13.jpg" alt="Carrot" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Carrot</h3>
+                                    <span class="text-primary mb-2">R$ 7.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 12.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-14.jpg" alt="Fresh Tomato" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Fresh Tomato</h3>
+                                    <span class="text-primary mb-2">R$ 7.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 12.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-15.jpg" alt="radish" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Radish</h3>
+                                    <span class="text-primary mb-2">R$ 7.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 12.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-16.jpg" alt="Pepper" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Pepper</h3>
+                                    <span class="text-primary mb-2">R$ 17.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 22.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="row g-4 mt-4">
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-6.jpg" alt="Mango" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Mango</h3>
+                                    <span class="text-primary mb-2">R$ 5.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 8.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-4.jpg" alt="Strawberry" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Strawberry</h3>
+                                    <span class="text-primary mb-2">R$ 12.75</span>
+                                    <span class="text-body text-decoration-line-through">R$ 18.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-8.jpg" alt="Banana" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Banana</h3>
+                                    <span class="text-primary mb-2">R$ 4.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 7.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-2.jpg" alt="Avocado" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Avocado</h3>
+                                    <span class="text-primary mb-2">R$ 5.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 6.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-3.jpg" alt="Peach" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Peach</h3>
+                                    <span class="text-primary mb-2">R$ 5.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 6.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-5.jpg" alt="Pear" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Pear</h3>
+                                    <span class="text-primary mb-2">R$ 3.25</span>
+                                    <span class="text-body text-decoration-line-through">R$ 5.15</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <div class="row g-4 mt-4">
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-17.jpg" alt="Pineapple" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Pineapple</h3>
+                                    <span class="text-primary mb-2">R$ 5.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 8.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-4.jpg" alt="Strawberry" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Strawberry</h3>
+                                    <span class="text-primary mb-2">R$ 9.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 15.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-18.jpg" alt="Orange" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Orange</h3>
+                                    <span class="text-primary mb-2">R$ 6.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 12.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-19.jpg" alt="Grape" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Grape</h3>
+                                    <span class="text-primary mb-2">R$ 11.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 18.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-md-6">
+                            <div class="product-item">
+                                <div class="position-relative overflow-hidden bg-light">
+                                    <img src="assets/images/product-20.jpg" alt="Lemon" class="w-100 img-fluid">
+                                    <span
+                                        class="bg-secondary text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</span>
+                                </div>
+                                <div class="text-center p-4">
+                                    <h3 class="product-title d-block h5 mb-2">Lemon</h3>
+                                    <span class="text-primary mb-2">R$ 11.50</span>
+                                    <span class="text-body text-decoration-line-through">R$ 18.75</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <div class="w-50 text-center border-end py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye text-primary me-2"></i>
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <div class="w-50 text-center py-2">
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping text-primary me-2"></i>
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            dadsadsda
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <!-- end section products -->
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
