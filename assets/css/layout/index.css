@@ -34,8 +34,8 @@
 
 /*** start nav-bar ***/
 .navbar-brand h1 {
-    color      : var(--bs-primary);
-    font-size  : var(--bs-font-30);
+    color    : var(--bs-primary);
+    font-size: var(--bs-font-30);
 }
 
 .navbar-brand h1 span {
@@ -219,3 +219,10 @@
 }
 
 /*** end section products ***/
+
+/*** start section review ***/
+.testimonial-item {
+    transition: var(--bs-transition);
+}
+
+/*** end section review ***/
