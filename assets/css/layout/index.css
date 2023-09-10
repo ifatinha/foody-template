@@ -35,10 +35,7 @@
 /*** start nav-bar ***/
 .navbar-brand h1 {
     color      : var(--bs-primary);
-    font-family: var(--primary-font);
     font-size  : var(--bs-font-30);
-    font-weight: 700;
-    line-height: 48px;
 }
 
 .navbar-brand h1 span {
@@ -144,13 +141,6 @@
     z-index : 1;
 }
 
-.carousel-title {
-    color         : var(--bs-dark);
-    font-family   : var(--primary-font);
-    font-weight   : 700;
-    text-transform: capitalize;
-}
-
 @media screen and (min-width: 1200px) {
     .display-2 {
         font-size: var(--bs-font-72);
@@ -222,6 +212,10 @@
 
 #pills-tabContent .d-flex a:hover {
     color: var(--bs-primary);
+}
+
+.firmVisit h2 {
+    font-family: var(--primary-font);
 }
 
 /*** end section products ***/
