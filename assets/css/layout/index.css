@@ -214,12 +214,13 @@
     font-family: var(--primary-font);
 }
 
-#pills-tabContent a {
+#pills-tabContent .d-flex a {
+    color     : var(--bs-gray);
     font-size : var(--bs-font-14);
     transition: var(--bs-transition);
 }
 
-#pills-tabContent a:hover {
+#pills-tabContent .d-flex a:hover {
     color: var(--bs-primary);
 }
 
