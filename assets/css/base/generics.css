@@ -125,3 +125,8 @@ h6 {
 .bg-primary {
     background-color: #3CB815 !important;
 }
+
+.py-6 {
+    padding-bottom: 6rem;
+    padding-top   : 6rem;
+}
