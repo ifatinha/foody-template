@@ -131,3 +131,11 @@ h6 {
     padding-bottom: 6rem;
     padding-top   : 6rem;
 }
+
+.mt-n4 {
+    margin-top: -1.5rem;
+}
+
+.fa-3x {
+    font-size: 2rem;
+}

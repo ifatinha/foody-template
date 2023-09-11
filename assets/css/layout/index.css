@@ -222,7 +222,17 @@
 
 /*** start section review ***/
 .testimonial-item {
-    transition: var(--bs-transition);
+    height          : 100%;
+    transition      : var(--bs-transition); 
+}
+
+.testimonial-img {
+    height: 60px;
+    width : 60px;
+}
+
+.testimonial-clientName {
+    font-size: var(--bs-font-20);
 }
 
 /*** end section review ***/
