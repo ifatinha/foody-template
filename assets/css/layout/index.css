@@ -271,3 +271,16 @@
 }
 
 /*** end section review ***/
+
+/*** start section blog ***/
+.blog-desc a {
+    color      : var(--bs-dark);
+    font-family: var(--primary-font);
+    transition : var(--bs-transition);
+}
+
+.blog-desc a:hover {
+    color: var(--bs-primary);
+}
+
+/*** end section blog ***/
