@@ -235,4 +235,39 @@
     font-size: var(--bs-font-20);
 }
 
+.testimonial-carousel .owl-nav {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 30px;
+}
+
+.testimonial-carousel .owl-nav button.owl-prev,
+.testimonial-carousel .owl-nav button.owl-next {
+    align-items    : center;
+    border         : 2px solid var(--bs-primary);
+    border-radius  : 50%;
+    display        : flex;
+    font-size      : 32px;
+    font-weight    : normal;
+    height         : 50px;
+    justify-content: center;
+    margin         : 0 10px;
+    text-align     : center;
+    transition     : .5s;
+    position       : relative;
+    width          : 50px;
+}
+
+.testimonial-carousel .owl-nav button.owl-prev span,
+.testimonial-carousel .owl-nav button.owl-next span {
+    font-weight: normal;
+    transform  : translate(-8%, -8%);
+}
+
+.testimonial-carousel .owl-nav button.owl-prev:hover,
+.testimonial-carousel .owl-nav button.owl-next:hover {
+    background-color: var(--bs-primary);
+    color           : var(--bs-white);
+}
+
 /*** end section review ***/
