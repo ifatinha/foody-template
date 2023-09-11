@@ -222,8 +222,8 @@
 
 /*** start section review ***/
 .testimonial-item {
-    height          : 100%;
-    transition      : var(--bs-transition); 
+    height    : 100%;
+    transition: var(--bs-transition);
 }
 
 .testimonial-img {
