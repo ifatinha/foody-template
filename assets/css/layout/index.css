@@ -1,4 +1,4 @@
-/*** start header navbar ***/
+/*** Header navbar start ***/
 .header {
     position: absolute;
     top     : 0;
@@ -6,7 +6,7 @@
     z-index : 2;
 }
 
-/*** start top-bar nav ***/
+/*** top-bar nav start ***/
 .top-navbar {
     width  : 100%;
     z-index: 2;
@@ -33,21 +33,6 @@
 /*** end top-bar nav ***/
 
 /*** start nav-bar ***/
-.navbar-brand h1 {
-    color    : var(--bs-primary);
-    font-size: var(--bs-font-30);
-}
-
-.navbar-brand h1 span {
-    color: var(--bs-secondary);
-}
-
-@media screen and (min-width: 998px) {
-    .navbar-brand h1 {
-        font-size: var(--bs-font-40);
-    }
-}
-
 .navbar {
     --bs-navbar-padding-y: 0;
 }
@@ -94,10 +79,10 @@
     transform : translateY(-1px);
 }
 
-/*** end nav-bar ***/
-/*** end header navbar ***/
+/*** nav-bar end ***/
+/*** header navbar end ***/
 
-/*** start carousel ***/
+/*** carousel start ***/
 @media screen and (max-width: 768px) {
     #carousel-foody .carousel-item {
         min-height: 500px;
@@ -147,9 +132,9 @@
     }
 }
 
-/*** end carousel ***/
+/*** carousel end ***/
 
-/*** start section about ***/
+/*** about start ***/
 .about-img img {
     position: relative;
     z-index : 2;
@@ -172,10 +157,9 @@
     color: var(--bs-primary);
 }
 
-/*** end section about ***/
+/*** about end ***/
 
-/*** start section features ***/
-
+/*** features start ***/
 
 .features-title {
     color      : var(--bs-gray-dark);
@@ -184,9 +168,9 @@
     font-weight: 600;
 }
 
-/*** end section features ***/
+/*** features end ***/
 
-/*** start section products ***/
+/*** products start ***/
 .product-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
     transition: var(--bs-transition);
@@ -218,9 +202,9 @@
     font-family: var(--primary-font);
 }
 
-/*** end section products ***/
+/*** products end ***/
 
-/*** start section review ***/
+/*** review start ***/
 .testimonial-item {
     height    : 100%;
     transition: var(--bs-transition);
@@ -270,9 +254,9 @@
     color           : var(--bs-white);
 }
 
-/*** end section review ***/
+/*** review end ***/
 
-/*** start section blog ***/
+/*** blog start ***/
 .blog-desc a {
     color      : var(--bs-dark);
     font-family: var(--primary-font);
@@ -283,9 +267,9 @@
     color: var(--bs-primary);
 }
 
-/*** end section blog ***/
+/*** blog end ***/
 
-/*** start section contact ***/
+/*** contact start ***/
 #contact .bg-primary p>a {
     color: var(--bs-white);
 }
@@ -304,22 +288,7 @@
     color: var(--bs-primary);
 }
 
-.form-control {
-    border-color : #ced4da;
-    border-radius: 0;
-}
-
-.form-control::placeholder {
-    color: inherit;
-}
-
-.form-control:focus {
-    box-shadow  : rgba(60, 184, 21, 0.25) 0px 0px 0px 0.25rem;
-    border-color: var(--bs-primary);
-    outline     : none;
-}
-
-/*** end section contact ***/
+/*** contact end ***/
 
 /*** Google map start ***/
 .iframe {
@@ -327,3 +296,53 @@
 }
 
 /*** Google map end ***/
+
+/*** Footer start ***/
+.footer {
+    color: var(--bs-gray-light);
+}
+
+#footer-social a {
+    background-color: transparent;
+    color           : var(--bs-white);
+}
+
+#footer-social a:hover {
+    background-color: var(--bs-white);
+    color           : var(--bs-dark);
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-title {
+        font-size: var(--bs-font-24);
+    }
+}
+
+.footer .btn-link {
+    color          : var(--bs-gray-light);
+    display        : block;
+    font-weight    : normal;
+    margin-bottom  : 5px;
+    padding        : 0;
+    text-decoration: none;
+    text-align     : left;
+    text-transform : capitalize;
+}
+
+.footer .btn-link i {
+    margin-right: 10px;
+    font-weight : bolder;
+}
+
+.footer .btn-link:hover {
+    color         : var(--bs-white);
+    letter-spacing: 1px;
+}
+
+.footer .btn-primary:hover {
+    opacity  : 0.8;
+    transform: translateY(0);
+}
+
+
+/*** Footer end ***/
