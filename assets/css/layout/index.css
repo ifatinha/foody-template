@@ -344,5 +344,20 @@
     transform: translateY(0);
 }
 
+.copyright {
+    border-top: 1px solid rgba(256, 256, 256, .1);
+    font-size : var(--bs-font-14);
+    padding   : 25px 0;
+}
+
+.copyright a {
+    color     : var(--bs-white);
+    font-size : var(--bs-font-14);
+    transition: var(--bs-transition);
+}
+
+.copyright a:hover {
+    color: var(--bs-primary);
+}
 
 /*** Footer end ***/
