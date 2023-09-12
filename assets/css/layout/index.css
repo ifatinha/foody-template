@@ -284,3 +284,24 @@
 }
 
 /*** end section blog ***/
+
+/*** start section contact ***/
+#contact .bg-primary p>a {
+    color: var(--bs-white);
+}
+
+#contact .btn-sm-square {
+    background-color: transparent;
+    color           : var(--bs-white);
+}
+
+#contact .btn-sm-square:hover {
+    background-color: var(--bs-white);
+    color           : var(--bs-dark);
+}
+
+#downloadNow {
+    color: var(--bs-primary);
+}
+
+/*** end section contact ***/

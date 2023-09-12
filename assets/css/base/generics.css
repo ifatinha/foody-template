@@ -21,6 +21,7 @@ h6 {
     font-family   : var(--primary-font);
     font-weight   : 700 !important;
     line-height   : 1.2;
+    margin-bottom : 0.5rem;
     text-transform: capitalize;
 }
 
