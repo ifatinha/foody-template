@@ -140,3 +140,7 @@ h6 {
 .fa-3x {
     font-size: 2rem;
 }
+
+textarea {
+    height: 180px !important;
+}

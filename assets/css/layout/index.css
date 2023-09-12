@@ -304,4 +304,26 @@
     color: var(--bs-primary);
 }
 
+.form-control {
+    border-color : #ced4da;
+    border-radius: 0;
+}
+
+.form-control::placeholder {
+    color: inherit;
+}
+
+.form-control:focus {
+    box-shadow  : rgba(60, 184, 21, 0.25) 0px 0px 0px 0.25rem;
+    border-color: var(--bs-primary);
+    outline     : none;
+}
+
 /*** end section contact ***/
+
+/*** Google map start ***/
+.iframe {
+    margin-bottom: -6px;
+}
+
+/*** Google map end ***/
